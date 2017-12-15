@@ -1,0 +1,48 @@
+{
+  "name": "pwa-sample",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "start-prod": "ng build --prod --base-href=\".\" --output-path=\"build\" && static -p 4200 ./build",
+    "build": "rimraf build && ng build --base-href=\".\" --output-path=\"build\"",
+    "build-prod": "rimraf build && ng build --prod --base-href=\".\" --output-path=\"build\"",
+    "build-aot": "rimraf build && ng build --prod --aot=true --base-href=\".\" --output-path=\"build\"",
+    "lint": "ng lint"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "6.0.6",
+    "@angular/compiler": "6.0.6",
+    "@angular/core": "6.0.6",
+    "@angular/forms": "6.0.6",
+    "@angular/http": "6.0.6",
+    "@angular/platform-browser": "6.0.6",
+    "@angular/platform-browser-dynamic": "6.0.6",
+    "@angular/router": "6.0.6",
+    "@types/detect-browser": "2.0.1",
+    "core-js": "2.5.5",
+    "detect-browser": "2.4.0",
+    "dexie": "2.0.3",
+    "font-awesome": "4.7.0",
+    "include-media": "1.4.9",
+    "rxjs": "6.2.1",
+    "zone.js": "^0.8.26"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.6.0",
+    "@angular-devkit/core": "0.6.0",
+    "@angular/cli": "6.0.0",
+    "@angular/compiler-cli": "6.0.6",
+    "@angular/service-worker": "6.0.6",
+    "@types/node": "10.0.4",
+    "codelyzer": "4.3.0",
+    "mkdirp": "0.5.1",
+    "node-static": "^0.7.10",
+    "os": "^0.1.1",
+    "rimraf": "2.6.2",
+    "tslint": "5.10.0",
+    "typescript": "2.7.2"
+  }
+}
